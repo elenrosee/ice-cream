@@ -1,0 +1,207 @@
+.products {
+  background-color: #fff;
+}
+.products {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @extend %list;
+  @media screen and (min-width: $tablet) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+.second-name {
+  display: block;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 15px;
+  color: rgba(255, 165, 186, 1);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.name-section {
+  margin-bottom: 145px;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: rgba(212, 20, 67, 1);
+  text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 260px;
+    font-size: 58px;
+    line-height: 1.13;
+  }
+}
+
+.products-list {
+  display: block;
+  width: 100%;
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.foto-products {
+  display: block;
+  transform: translateY(-45%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -60px;
+  width: 250px;
+  @media screen and (min-width: $tablet) {
+    width: 220px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+  }
+}
+.products-item {
+  display: block;
+  width: 280px;
+  border-radius: 24px;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: 220px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &:nth-child(1) {
+    background: #ffb8ca;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.6);
+    }
+  }
+  &:nth-child(2) {
+    background: #f0d1a5;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.6);
+    }
+  }
+  &:nth-child(3) {
+    background: #c2e297;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.6);
+    }
+  }
+}
+.products-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 50px;
+  }
+}
+.products-name {
+  font-family: Titan One;
+  font-size: 20px;
+  line-height: 1.15;
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-white-color;
+  margin-bottom: 30px;
+}
+.doted {
+  margin-bottom: 30px;
+}
+.doted-svg {
+  --color2: #fff;
+}
+.about-ice-creame {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    line-height: 1.78;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $main-white-color;
+}
+.products-item .button {
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 50px rgba(210, 20, 67, 0.6);
+  }
+}
+.arrow-svg {
+  fill: #d41443;
+}

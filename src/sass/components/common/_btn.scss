@@ -1,0 +1,18 @@
+.btn {
+  @extend %link;
+  border-radius: 20px;
+  color: $main-red-color;
+
+  background-color: $main-white-color;
+  border: none;
+}
+
+.btn.reverse {
+  color: $main-white-color;
+  background-color: $main-red-color;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
